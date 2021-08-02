@@ -1,0 +1,221 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="py-5 px-5 w-80">
+  <div class="d-flex justify-content-between align-items-center mb-5">
+    <div class="d-flex align-items-center">
+      <h2 class="me-5">Assignment</h2>
+      <a class="fw-bold" href="#!"
+        >All Courses<span class="material-icons text-success align-bottom">
+          expand_more
+        </span></a
+      >
+    </div>
+    <ul class="list-unstyled d-flex align-items-center mb-0">
+      <li>
+        <a href="#"><span class="material-icons">search</span></a>
+      </li>
+      <li class="ms-4">
+        <a href="#"><span class="material-icons">notifications_active</span></a>
+      </li>
+    </ul>
+  </div>
+  <div class="content">
+    <a href="#!" class="d-inline-block mb-2 fw-bold"
+      >All(4)<span class="material-icons text-success align-bottom">
+        expand_more
+      </span></a
+    >
+    <div class="row">
+      <div class="col-4">
+        <ul class="list-group">
+          <li
+            class="list-group-item list-group-item-action active"
+            aria-current="true"
+          >
+            <a href="">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="mb-1 small">Chapter Assignment 2</p>
+                  <h3 class="mb-0 fs-6 fw-bold">Please check this file…</h3>
+                </div>
+                <div class="text-end">
+                  <span class="d-block small">4 hrs ago</span>
+                  <span class="d-block mt-1 text-muted small">Emily Wang</span>
+                </div>
+              </div></a
+            >
+          </li>
+          <li
+            class="list-group-item list-group-item-action"
+            aria-current="true"
+          >
+            <a href="">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="mb-1 small">Chapter Assignment 1</p>
+                  <h3 class="mb-0 fs-6 fw-bold">My Homework</h3>
+                </div>
+                <div class="text-end">
+                  <span class="d-block small">12 hrs ago</span>
+                  <span class="d-block mt-1 text-muted small">David Xu</span>
+                </div>
+              </div></a
+            >
+          </li>
+          <li
+            class="list-group-item list-group-item-action"
+            aria-current="true"
+          >
+            <a href="">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="mb-1 small">Final Assignment</p>
+                  <h3 class="mb-0 fs-6 fw-bold">Have a problem with this…</h3>
+                </div>
+                <div class="text-end">
+                  <span class="d-block small">18 hrs ago</span>
+                  <span class="d-block mt-1 text-muted small">Tony Wei</span>
+                </div>
+              </div></a
+            >
+          </li>
+          <li
+            class="list-group-item list-group-item-action"
+            aria-current="true"
+          >
+            <a href="">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="mb-1 small">Final Assignment</p>
+                  <h3 class="mb-0 fs-6 fw-bold">Did I do it right?</h3>
+                </div>
+                <div class="text-end">
+                  <span class="d-block small">19 hrs ago</span>
+                  <span class="d-block mt-1 text-muted small">Christina Lin</span>
+                </div>
+              </div></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-8">
+        <div class="card">
+          <div
+            class="
+              card-header
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            <div>
+              <p class="mb-1 small">Chapter Assignment 2 / HTML&CSS</p>
+              <h3 class="mb-0 fs-6 fw-bold">
+                Please check this file for me, thanks!
+              </h3>
+            </div>
+            <a class="d-inline-block" href="#">
+              <span class="material-icons"> more_vert </span>
+            </a>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li class="d-flex">
+                <img
+                  class="rounded rounded-circle me-2"
+                  src="https://randomuser.me/api/portraits/women/43.jpg"
+                  alt="photo"
+                  width="40"
+                  height="40"
+                />
+                <div>
+                  <p class="mb-1 fw-bold">Emily Wang</p>
+                  <p class="mb-0 text-muted small">10:38 AM (4 hours ago)</p>
+                  <p class="mt-3">
+                    Hi Teacher, the attached file is my homework of chapter 2.
+                    And here comes a question: Why in the following code the
+                    height of the <code class="text-success">div</code> is
+                    bigger than the height of the
+                    <code class="text-success">img</code> ? There is a gap below
+                    the image, but it doesn’t seems to be a padding/margin. What
+                    is the gap or extra space below image?
+                  </p>
+                  <div class="input-group mb-3 border-bottom pb-3">
+                    <button type="button" class="btn btn-secondary rounded rounded-1">
+                      <span class="material-icons align-bottom">
+                        attach_file </span
+                      >HW-2-David.zip
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="d-flex">
+                <img
+                  class="rounded rounded-circle me-2"
+                  src="https://randomuser.me/api/portraits/men/40.jpg"
+                  alt="photo"
+                  width="40"
+                  height="40"
+                />
+                <div>
+                  <div class="d-flex">
+                    <div>
+                      <p class="mb-1 fw-bold">Andy Chen (You)</p>
+                      <p class="mb-0 text-muted small">
+                        13:24 AM (1 hours ago)
+                      </p>
+                    </div>
+                    <div class="ms-auto">
+                      <a href="#">
+                        <span class="material-icons me-3"> star_border </span>
+                      </a>
+                      <a href="">
+                        <span class="material-icons"> edit </span>
+                      </a>
+                    </div>
+                  </div>
+                  <p class="mt-3">
+                    Hi David, by default, an image is rendered inline, like a
+                    letter so it sits on the same line that a, b, c and d sit
+                    on. There is space below that line for the descenders you
+                    find on letters like g, j, p and q.
+                  </p>
+                  <p>You can:</p>
+                  <ul>
+                    <li>
+                      adjust the <code>vertical-align</code> of the image to
+                      position it elsewhere (e.g. the <code>middle</code> ) or
+                      　
+                    </li>
+                    <li>change the <code>display</code> so it isn’t inline.</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <div>
+            <a class="me-3" href="#">
+              <span class="material-icons"> chevron_left </span>
+            </a>
+            <a href="#">
+              <span class="material-icons"> chevron_right </span>
+            </a>
+          </div>
+          <div>
+            <button type="button" class="btn btn-outline-success me-3">
+              Mark as read
+            </button>
+            <button type="button" class="btn btn-success">Reply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
