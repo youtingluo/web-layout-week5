@@ -7,5 +7,16 @@ a {
   text-decoration: none;
 }
 a.active {
-  color: #198754;
+  color: $success;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $success;
+  }
 }
