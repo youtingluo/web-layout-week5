@@ -32,7 +32,7 @@
             >
           </li>
           <li class="mb-4">
-            <a class="text-decoration-none fw-bold d-inline-block px-5 py-2 active" href="#">
+            <a class="text-decoration-none fw-bold d-inline-block px-5 py-2 <% if (current === 'assignment') {%>active<%} %>" href="./index.html">
               <span class="material-icons me-3 align-bottom"> assignment </span
               >Assignment</a
             >
@@ -45,7 +45,7 @@
             >
           </li>
           <li class="mb-4">
-            <a class="text-decoration-none fw-bold d-inline-block px-5 py-2" href="#"
+            <a class="text-decoration-none fw-bold d-inline-block px-5 py-2 <% if (current === 'admin') {%>active<%} %>" href="./admin.html"
               ><span class="material-icons me-3 align-bottom"> people </span
               >Admin</a
             >
