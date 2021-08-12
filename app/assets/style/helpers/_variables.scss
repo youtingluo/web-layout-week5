@@ -79,7 +79,7 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    #00cc99,//$primary,
+  "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
@@ -638,7 +638,7 @@ $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
 
 $btn-link-color:              $link-color !default;
 $btn-link-hover-color:        $link-hover-color !default;
-$btn-link-disabled-color:     $gray-600 !default;
+$btn-link-disabled-color:     $gray-400;//$gray-600 !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:           $border-radius !default;
@@ -693,7 +693,7 @@ $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-font-size-lg:                    $input-btn-font-size-lg !default;
 
 $input-bg:                              $white !default;
-$input-disabled-bg:                     $gray-200 !default;
+$input-disabled-bg:                     $gray-100;//$gray-200 !default;
 $input-disabled-border-color:           null !default;
 
 $input-color:                           $body-color !default;
@@ -1047,24 +1047,24 @@ $pagination-padding-x-sm:           .5rem !default;
 $pagination-padding-y-lg:           .75rem !default;
 $pagination-padding-x-lg:           1.5rem !default;
 
-$pagination-color:                  $link-color !default;
+$pagination-color:                  $black;//$link-color !default;
 $pagination-bg:                     $white !default;
 $pagination-border-width:           $border-width !default;
 $pagination-border-radius:          $border-radius !default;
 $pagination-margin-start:           -$pagination-border-width !default;
-$pagination-border-color:           $gray-300 !default;
+$pagination-border-color:           $success;//$gray-300 !default;
 
 $pagination-focus-color:            $link-hover-color !default;
 $pagination-focus-bg:               $gray-200 !default;
 $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
-$pagination-hover-color:            $link-hover-color !default;
-$pagination-hover-bg:               $gray-200 !default;
-$pagination-hover-border-color:     $gray-300 !default;
+$pagination-hover-color:            $white;//$link-hover-color !default;
+$pagination-hover-bg:               $success; //$gray-200 !default;
+$pagination-hover-border-color:     $success; //$gray-300 !default;
 
-$pagination-active-color:           $component-active-color !default;
-$pagination-active-bg:              $component-active-bg !default;
+$pagination-active-color:           $white;//$component-active-color !default;
+$pagination-active-bg:              $success;//$component-active-bg !default;
 $pagination-active-border-color:    $pagination-active-bg !default;
 
 $pagination-disabled-color:         $gray-600 !default;

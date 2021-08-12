@@ -59,7 +59,7 @@ current: admin
             >
               <span class="material-icons-outlined"> visibility </span>
             </a>
-            <a href="#!">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#editModal">
               <span class="material-icons-outlined"> edit </span>
             </a>
           </td>
@@ -237,6 +237,30 @@ current: admin
         </tr>
       </tbody>
     </table>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-end">
+        <li class="page-item">
+          <a class="page-link text-success" href="#" aria-label="Previous">
+            <span class="material-icons-outlined align-middle fs-6">
+              keyboard_arrow_left
+            </span>
+          </a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link text-success" href="#" aria-label="Next">
+            <span class="material-icons-outlined align-middle fs-6">
+              keyboard_arrow_right
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="btn btn-outline-dark" disabled>
+      Send Verification Mail
+    </button>
   </div>
   <!-- Modal -->
   <div
@@ -280,7 +304,7 @@ current: admin
                     <h4>Emir Wicks</h4>
                     <small class="text-muted">emir.wicks@mail.com</small>
                   </div>
-                  <div class="d-flex mt-3">
+                  <div class="d-flex mt-3 mb-4">
                     <small class="me-auto bg-light p-1">Verified</small>
                     <span class="material-icons-outlined"> expand_more </span>
                   </div>
@@ -295,6 +319,164 @@ current: admin
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal edit -->
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="editModal"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="editModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content rounded-0">
+        <div class="modal-header border-0">
+          <h3 class="modal-title" id="editModalLabel">Edit Admin</h3>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="h5 fw-bold mb-3">Account</h3>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control py-3 border-0"
+              id="name"
+              value="Emir Wicks"
+              disabled
+              readonly
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control py-3 border-0"
+              id="email"
+              value="emir.wicks@mail.com"
+              disabled
+              readonly
+            />
+          </div>
+          <hr />
+          <h3 class="h5 fw-bold">Verification</h3>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <span
+                class="
+                  bg-success
+                  material-icons-outlined
+                  rounded-circle
+                  text-white
+                  align-bottom
+                  p-1
+                  fs-6
+                "
+              >
+                done </span
+              ><span class="fw-bold"> Verified</span>
+            </div>
+            <div>2020/4/12</div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-light disabled w-100 mt-3 py-3"
+            disabled
+          >
+            Send Verification Mail
+          </button>
+          <hr />
+          <h3 class="h5 fw-bold">Access Level</h3>
+          <select class="form-select p-3" aria-label="Default select example">
+            <option selected>Admin</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <hr />
+          <h3 class="h5 fw-bold">Custom Access</h3>
+          <div class="form-check mb-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Lecture"
+              id="Lecture"
+            />
+            <label class="form-check-label" for="Lecture">
+              Lecture
+            </label>
+          </div>
+          <div class="form-check mb-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Coupon"
+              id="Coupon"
+            />
+            <label class="form-check-label" for="Coupon">
+              Coupon
+            </label>
+          </div>
+          <div class="form-check mb-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Message"
+              id="Message"
+            />
+            <label class="form-check-label" for="Message">
+              Message
+            </label>
+          </div>
+          <div class="form-check mb-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Setting"
+              id="Setting"
+            />
+            <label class="form-check-label" for="Setting">
+              Setting
+            </label>
+          </div>
+          <div class="form-check mb-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Task Menu"
+              id="Task Menu"
+            />
+            <label class="form-check-label" for="Task Menu">
+              Task Menu
+            </label>
+          </div>
+          <hr />
+          <h3 class="h5 fw-bold">Deactivate Account</h3>
+          <div class="my-3">
+            <span class="material-icons-outlined text-danger align-bottom">
+              warning </span
+            ><span class="text-danger">This cannot be undone!</span>
+          </div>
+          <button type="button" class="btn btn-outline-danger w-100 py-3">
+            Deactivate This Account
+          </button>
+          <div class="text-end mt-5">
+            <div data-bs-dismiss="modal" class="btn btn-outline-success me-3">
+              Cancel
+            </div>
+            <div class="btn btn-success">Update</div>
           </div>
         </div>
       </div>

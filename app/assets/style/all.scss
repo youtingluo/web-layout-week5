@@ -10,3 +10,7 @@
 .bg-light {
   background: #F8F9FA;
 }
+.btn-outline-light:disabled, .btn-outline-light.disabled {
+  color: $gray-400;
+  border-color: $gray-400;
+}
